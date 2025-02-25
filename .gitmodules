@@ -1,0 +1,18 @@
+[submodule "libs/magic_enum"]
+	path = libs/magic_enum
+	url = https://github.com/Neargye/magic_enum
+[submodule "libs/glfw"]
+	path = libs/glfw
+	url = https://github.com/glfw/glfw
+[submodule "libs/glm"]
+	path = libs/glm
+	url = https://github.com/g-truc/glm/
+[submodule "libs/glaze"]
+	path = libs/glaze
+	url = https://github.com/stephenberry/glaze
+[submodule "libs/efsw"]
+	path = libs/efsw
+	url = https://github.com/SpartanJ/efsw
+[submodule "libs/glslang"]
+	path = libs/glslang
+	url = https://github.com/sachavincent/glslang

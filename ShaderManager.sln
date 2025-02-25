@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderManager", "ShaderManager\ShaderManager.vcxproj", "{7BFAC700-2739-42E0-B2F5-86EF51DE5079}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderManagerTests", "ShaderManagerTests\ShaderManagerTests.vcxproj", "{924F4976-4C32-458A-84FB-702528D5A3A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BFAC700-2739-42E0-B2F5-86EF51DE5079} = {7BFAC700-2739-42E0-B2F5-86EF51DE5079}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BFAC700-2739-42E0-B2F5-86EF51DE5079}.Debug|x64.ActiveCfg = Debug|x64
+		{7BFAC700-2739-42E0-B2F5-86EF51DE5079}.Debug|x64.Build.0 = Debug|x64
+		{7BFAC700-2739-42E0-B2F5-86EF51DE5079}.Release|x64.ActiveCfg = Release|x64
+		{7BFAC700-2739-42E0-B2F5-86EF51DE5079}.Release|x64.Build.0 = Release|x64
+		{924F4976-4C32-458A-84FB-702528D5A3A0}.Debug|x64.ActiveCfg = Debug|x64
+		{924F4976-4C32-458A-84FB-702528D5A3A0}.Debug|x64.Build.0 = Debug|x64
+		{924F4976-4C32-458A-84FB-702528D5A3A0}.Release|x64.ActiveCfg = Release|x64
+		{924F4976-4C32-458A-84FB-702528D5A3A0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D00E0CF-B2F4-44C1-BDA3-B3FFB9993D88}
+	EndGlobalSection
+EndGlobal

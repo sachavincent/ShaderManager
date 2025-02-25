@@ -1,0 +1,46 @@
+{
+  "programs": [
+    {
+      "name": "testFileUnknown",
+      "files": {
+        "vertex": "../shaders/none.vert",
+        "fragment": "../shaders/none.frag"
+      }
+    },
+    {
+      "name": "test",
+      "files": {
+        "vertex": "../shaders/test.vert",
+        "fragment": "../shaders/test.frag"
+      }
+    },
+    {
+      "name": "testU1",
+      "files": {
+        "vertex": "../shaders/testU1.vert",
+        "fragment": "../shaders/testU1.frag"
+      }
+    },
+    {
+      "name": "testU2",
+      "files": {
+        "vertex": "../shaders/testU2.vert",
+        "fragment": "../shaders/testU2.frag"
+      }
+    },
+    {
+      "name": "testU3",
+      "files": {
+        "vertex": "../shaders/testU3.vert",
+        "fragment": "../shaders/testU3.frag"
+      }
+    },
+    {
+      "name": "testU4",
+      "files": {
+        "vertex": "../shaders/testU4.vert",
+        "fragment": "../shaders/testU4.frag"
+      }
+    }
+  ]
+}

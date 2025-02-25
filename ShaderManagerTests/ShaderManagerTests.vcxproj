@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{924f4976-4c32-458a-84fb-702528d5a3a0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\$(ProjectName)\build\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+    <IncludePath>$(SolutionDir)$(ProjectName)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\$(ProjectName)\build\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\$(ProjectName)\build\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)$(ProjectName)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>X64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIRS);$(SolutionDir)$(SolutionName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <AdditionalOptions>/Zo</AdditionalOptions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)build\$(Configuration)\$(SolutionName)d.pch</PrecompiledHeaderOutputFile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>$(SolutionDir)build\lib\$(SolutionName)d.lib;$(LIB_FILES_DEBUG);%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>X64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>$(INCLUDE_DIRS);$(SolutionDir)$(SolutionName)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <ExceptionHandling>false</ExceptionHandling>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)build\$(Configuration)\$(SolutionName).pch</PrecompiledHeaderOutputFile>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>$(SolutionDir)build\lib\$(SolutionName).lib;$(LIB_FILES_RELEASE);%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="assets\ParsingTests\buffer_only.glsl" />
+    <None Include="assets\ParsingTests\definitions.glsl" />
+    <None Include="assets\ParsingTests\empty.glsl" />
+    <None Include="assets\ParsingTests\examples.glsl" />
+    <None Include="assets\ParsingTests\includeTwoFilesOnlySuccess.glsl" />
+    <None Include="assets\ParsingTests\includeOnlySuccess.glsl" />
+    <None Include="assets\ParsingTests\IncludePropagationError.glsl" />
+    <None Include="assets\ParsingTests\includeTwoWithContent.glsl" />
+    <None Include="assets\ParsingTests\includeWithContent.glsl" />
+    <None Include="assets\ParsingTests\includeWithContentMixed.glsl" />
+    <None Include="assets\ShaderManagerTests\Descriptors\test1.json" />
+    <None Include="assets\ShaderManagerTests\Shaders\test.frag" />
+    <None Include="assets\ShaderManagerTests\Shaders\test.vert" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU1.frag" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU1.vert" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU2.frag" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU2.vert" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU3.frag" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU3.vert" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.frag" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.glsl" />
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.vert" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ParserUtilsTests.cpp" />
+    <ClCompile Include="src\ParsingTests.cpp" />
+    <ClCompile Include="src\ShaderManagerTests.cpp" />
+    <ClCompile Include="src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\utils\SetupOpenGL.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\utils\SetupOpenGL.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\gmock.1.11.0\build\native\gmock.targets" Condition="Exists('..\packages\gmock.1.11.0\build\native\gmock.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\gmock.1.11.0\build\native\gmock.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gmock.1.11.0\build\native\gmock.targets'))" />
+  </Target>
+</Project>

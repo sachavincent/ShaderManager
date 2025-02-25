@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc" />
+    <ClCompile Include="src\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParsingTests.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParserUtilsTests.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderManagerTests.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\SetupOpenGL.cpp">
+      <Filter>Sources\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{f30b445f-13ff-4765-8638-3f6fa5993da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{587c9ed2-e242-476b-acbf-1f1b87918205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{9312ac4d-b0d3-44e3-8bb1-ab6e3804a47e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ParsingTests">
+      <UniqueIdentifier>{9bb527d3-1e6d-47cc-a11a-ead0fdbfda01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\utils">
+      <UniqueIdentifier>{6d55bfcd-7c79-4632-a13d-6d143efab48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\utils">
+      <UniqueIdentifier>{242da904-0b46-4036-a340-a615222a18fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ShaderManagerTests">
+      <UniqueIdentifier>{f9739793-6c33-404a-a09d-a95bfa1344b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ShaderManagerTests\Descriptors">
+      <UniqueIdentifier>{50b1d88a-09a4-434b-a121-ca7d58f2b2bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ShaderManagerTests\Shaders">
+      <UniqueIdentifier>{4ce7fd9e-798b-4578-8fd4-1ae6a81a34d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="assets\ParsingTests\empty.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\IncludePropagationError.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\definitions.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\includeOnlySuccess.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\includeTwoFilesOnlySuccess.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\examples.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\includeWithContent.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\includeTwoWithContent.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\includeWithContentMixed.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ParsingTests\buffer_only.glsl">
+      <Filter>Assets\ParsingTests</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\test.vert">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\test.frag">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU1.vert">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU1.frag">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU2.vert">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU2.frag">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Descriptors\test1.json">
+      <Filter>Assets\ShaderManagerTests\Descriptors</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU3.frag">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU3.vert">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.frag">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.vert">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+    <None Include="assets\ShaderManagerTests\Shaders\testU4.glsl">
+      <Filter>Assets\ShaderManagerTests\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\utils\SetupOpenGL.h">
+      <Filter>Headers\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

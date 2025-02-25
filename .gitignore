@@ -1,0 +1,6 @@
+build/
+.vs/
+*.cov
+*.log
+*.inspxeproj
+/Outputs/Intermediate/Shared/x64/Debug
