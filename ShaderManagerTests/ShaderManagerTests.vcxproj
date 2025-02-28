@@ -51,7 +51,7 @@
       <UseStandardPreprocessor>true</UseStandardPreprocessor>
       <AdditionalOptions>/Zo</AdditionalOptions>
       <ExceptionHandling>false</ExceptionHandling>
-      <PrecompiledHeaderOutputFile>$(SolutionDir)build\$(Configuration)\$(SolutionName)d.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)build\$(Configuration)\$(SolutionName).pch</PrecompiledHeaderOutputFile>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -119,6 +119,7 @@
     <ClCompile Include="src\ShaderManagerTests.cpp" />
     <ClCompile Include="src\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\utils\SetupOpenGL.cpp" />
   </ItemGroup>

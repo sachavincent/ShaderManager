@@ -3,4 +3,4 @@ build/
 *.cov
 *.log
 *.inspxeproj
-/Outputs/Intermediate/Shared/x64/Debug
+Outputs/
