@@ -10,9 +10,12 @@
 #include <fmt/format.h>
 #pragma warning (push)
 #pragma warning (disable: 4244)
+#pragma warning (disable: 4127)
 #include <glaze/json.hpp>
 #include <glaze/core/wrappers.hpp>
 #include <magic_enum/magic_enum_flags.hpp>
+#include <magic_enum/magic_enum_containers.hpp>
+#include <magic_enum/magic_enum_utility.hpp>
 #pragma warning (pop)
 #include <string_view>
 #include <regex>

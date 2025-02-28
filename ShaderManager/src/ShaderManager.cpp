@@ -3,10 +3,6 @@
 
 #include "ShadersDescription.h"
 #include "utils/ErrorHandler.h"
-#pragma warning (push)
-#pragma warning (disable: 4244)
-#include <glaze/json.hpp>
-#pragma warning (pop)
 
 namespace shadermanager {
 	[[nodiscard]] std::expected<ShaderProgram*, Error> ShaderManager::RegisterShaderProgram(const std::string& shaderProgramName) {
@@ -27,7 +23,7 @@ namespace shadermanager {
 		m_shaderRoot = path.parent_path();
 
 
-		constexpr glz::opts opts{ .internal = uint32_t(glz::opts::internal::disable_padding) };
+		constexpr glz::opts opts{ .internal = uint32_t(glz::opts_internal::disable_padding) };
 		ShadersDescription obj{};
 		auto error = glz::read_file_json(obj, path.string(), m_readBuffer);
 		if (error) {

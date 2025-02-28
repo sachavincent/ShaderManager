@@ -7,9 +7,6 @@
 #include "UniformsHandler.h"
 #include "ShaderParser.h"
 #include "utils/Symbol.h"
-#pragma warning (push)
-#pragma warning (disable: 4244)
-#include <glaze/json.hpp>
 #include <bitset>
 
 namespace shadermanager {
@@ -78,4 +75,3 @@ namespace shadermanager {
 	};
 }
 namespace sm = shadermanager;
-#pragma warning (pop)

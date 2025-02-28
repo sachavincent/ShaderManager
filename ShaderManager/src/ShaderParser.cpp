@@ -17,7 +17,6 @@
 #include <fstream>
 #include <ranges>
 #include <regex>
-#include <magic_enum/magic_enum.hpp>
 
 namespace shadermanager {
 	namespace parsing {

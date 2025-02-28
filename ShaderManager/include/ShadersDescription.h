@@ -4,11 +4,6 @@
 #include <vector>
 #include <filesystem>
 #include <unordered_map>
-#pragma warning (push)
-#pragma warning (disable: 4244)
-#include <glaze/json.hpp>
-#include <glaze/core/wrappers.hpp>
-#include <magic_enum/magic_enum_flags.hpp>
 
 namespace shadermanager {
 	struct ShaderDescription {
@@ -65,5 +60,3 @@ struct glz::meta<sm::ShadersDescription> {
 		"programs", custom<&sm::ShadersDescription::readFiles, &sm::ShadersDescription::writeFiles>
 	);
 };
-
-#pragma warning (pop)

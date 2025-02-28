@@ -2,9 +2,6 @@
 
 #include <string>
 #include <unordered_map>
-#pragma warning (push)
-#pragma warning (disable: 4244)
-#include <magic_enum/magic_enum_containers.hpp>
 
 #undef NO_ERROR
 namespace shadermanager {
@@ -100,4 +97,3 @@ namespace shadermanager {
 		};
 	}
 }
-#pragma warning (pop)

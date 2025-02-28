@@ -4,8 +4,6 @@
 #include <memory>
 #include <filesystem>
 #include <expected>
-#include <magic_enum/magic_enum_containers.hpp>
-#include <magic_enum/magic_enum_utility.hpp>
 #include <glm/glm.hpp>
 #include "ShaderFile.h"
 #include "utils/ErrorHandler.h"
